@@ -12,3 +12,10 @@ h1 {
 h2 {
   font-size: 1.3rem;
 }
+
+li.pagenoactive {
+  border-bottom: 1px solid transparent;
+}
+li.pageactive {
+  border-bottom: 1px solid red;
+}

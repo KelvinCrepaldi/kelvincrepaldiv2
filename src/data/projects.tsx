@@ -41,7 +41,7 @@ export const projectsData = [
   {
     title: "Kelvin Crepaldi",
     description:
-      "Projeto de Portfólio, onde eu guardo informações sobre mim e coisas que eu fiz, minha ideia é sempre atualizar e melhorar esse projeto com novas informações e futuramente criar postagens de artigos com meus conhecimentos.",
+      "Projeto de Portfólio, onde eu guardo informações e projetos pessoais.",
     techs: [
       "React.js",
       "Styled Components",
@@ -54,6 +54,7 @@ export const projectsData = [
     repo_url: "https://github.com/KelvinCrepaldi/portfolio",
     demo_url: "https://kelvincrepaldi.vercel.app/",
     img_print: "https://imgur.com/7M5uhYT.jpg",
+    type: "front",
   },
   {
     title: "PokeNext",
@@ -62,6 +63,7 @@ export const projectsData = [
     repo_url: "https://github.com/KelvinCrepaldi/pokenext",
     demo_url: "https://pokenext-nine-mu.vercel.app",
     img_print: "https://imgur.com/c03kfeM.jpg",
+    type: "front",
   },
   {
     title: "Ninamartinho",
@@ -80,15 +82,17 @@ export const projectsData = [
     repo_url: "https://github.com/KelvinCrepaldi/ninamartinho",
     demo_url: "https://ninamartinho.vercel.app",
     img_print: "https://imgur.com/ObGxsiM.jpg",
+    type: "front",
   },
   {
     title: "VMBProject",
     description:
-      "App para listar negociações de moedas digitais usando a API Mercadobitcoin, sendo possível filtrar por datas determinadas pelo usuário.",
+      "App para listar negociações de moedas digitais usando a API Mercadobitcoin.",
     techs: ["Vue.js 3", "Vuetify", "Axios", "Pinea", "Vercel", "Json"],
     repo_url: "https://github.com/KelvinCrepaldi/VMBProject",
     demo_url: "https://vmb-project.vercel.app",
     img_print: "https://imgur.com/CNeqR5O.jpg",
+    type: "front",
   },
   {
     title: "Loginu-App",
@@ -104,6 +108,7 @@ export const projectsData = [
     repo_url: "https://github.com/KelvinCrepaldi/loginu-app",
     demo_url: "https://loginu-app.vercel.app",
     img_print: "https://imgur.com/tqDnSVY.jpg",
+    type: "front",
   },
   {
     title: "Loginu-Api",
@@ -112,7 +117,8 @@ export const projectsData = [
     techs: ["Express", "Typescript", "Uuid", "Jsonwebtoken", "Dados voláteis"],
     repo_url: "https://github.com/KelvinCrepaldi/loginu-api",
     demo_url: "https://loginu-app.vercel.app",
-    img_print: "ApiImage",
+    img_print: "",
+    type: "back",
   },
   {
     title: "Eximoveisapi Gestão de Imóveis",
@@ -130,12 +136,12 @@ export const projectsData = [
     repo_url: "https://github.com/KelvinCrepaldi/eximoveisapi",
     demo_url:
       "https://github.com/KelvinCrepaldi/eximoveisapi/blob/main/diagrama.drawio.png",
-    img_print: "ApiImage",
+    img_print: "",
+    type: "back",
   },
   {
     title: "Lee Coffe",
-    description:
-      "E-commerce de venda de café. Com objetivo de ajudar o pequeno empreendedor de café  a divulgar o seu produto e receber avaliações e, também, ajudar o cliente a encontrar os melhores produtos baseados nas avaliações de outros clientes.",
+    description: "E-commerce de venda de café.",
     techs: [
       "React.js",
       "Styled Components",
@@ -153,11 +159,11 @@ export const projectsData = [
     repo_url: "https://github.com/KelvinCrepaldi/le-coffee-app",
     demo_url: "https://lee-coffee-app-react.vercel.app/",
     img_print: "https://i.imgur.com/R6RynjA.jpg",
+    type: "front",
   },
   {
     title: "Mind Habits",
-    description:
-      "Aplicação em React onde o usuário possa gerir hábitos que queira adquirir/praticar, criando hábitos e/ou participando de grupos com outras pessoas que possuam os mesmos hábitos.",
+    description: "Aplicação em React onde o usuário possa gerir hábitos.",
     techs: [
       "React.js",
       "Styled components",
@@ -172,16 +178,18 @@ export const projectsData = [
     repo_url: "https://github.com/KelvinCrepaldi/mind-habits-app",
     demo_url: "https://mind-habits-app.vercel.app/",
     img_print: "https://i.imgur.com/wLhXXmY.png",
+    type: "front",
   },
   {
     title: "Lig-4",
     description:
-      "Um jogo Lig-4 criado com o objetivo de praticar manipulação dos elementos DOM de uma página com Javascript.",
+      "Um jogo Lig-4 criado com o objetivo de praticar manipulação dos elementos DOM.",
     techs: ["HTML5", "CSS3", "Javascript"],
     repo_url:
       "https://github.com/KelvinCrepaldi/entrega-lig-4-sprint-5-PauloHenriqueMagno",
     demo_url: "https://annabella.vercel.app/index.html",
     img_print: "https://i.imgur.com/6mqX40L.jpg",
+    type: "front",
   },
   {
     title: "Anna Bella",
@@ -191,16 +199,16 @@ export const projectsData = [
     repo_url: "https://github.com/KelvinCrepaldi/annabella",
     demo_url: "https://annabella.vercel.app/index.html",
     img_print: "https://i.imgur.com/lKpkM40.jpg",
+    type: "front",
   },
-
   {
     title: "Le-Coffee API",
-    description:
-      "Le-Coffee é uma API para um e-commerce de cafés artesanais. Para o administrador do e-commerce, a API proporciona um gerenciamento completo para cadastro dos produtos, atualização, buscas e exclusão dos produtos no banco de dados. Para o cliente, é possível buscar os vários tipos de cafés existentes,consultar os produtos por regiões geográficas.",
+    description: "Le-Coffee é uma API para um e-commerce de cafés artesanais.",
     techs: ["Python", "Flask", "PostgreSQL", "Heroku"],
     repo_url: "https://github.com/KelvinCrepaldi/Le-Coffee-API",
     demo_url: "https://documenter.getpostman.com/view/19946807/UVsFz8tc",
-    img_print: "ApiImage",
+    img_print: "",
+    type: "back",
   },
   {
     title: "Fiado Online API",
@@ -209,15 +217,17 @@ export const projectsData = [
     techs: ["NodeJS", "ExpressJS", "TypeScript", "Jest", "JWT", "Docker"],
     repo_url: "https://github.com/KelvinCrepaldi/capstoneQ4-fiado-online",
     demo_url: "https://documenter.getpostman.com/view/20745940/UyrEiahn",
-    img_print: "ApiImage",
+    img_print: "",
+    type: "back",
   },
   {
     title: "HR-control API",
     description:
-      "HR-control é uma API feita para auxiliar os setores de recursos humanos em empresas, onde administradores cadastrados podem registrar e consultar funcionários além de administrar contratos e informações pessoais de cada um. O sistema também recebe informações e currículos de candidatos a eventuais vagas de trabalho.",
+      "HR-control é uma API de RH feita para auxiliar os setores de recursos humanos em empresas.",
     techs: ["Python", "Django", "Docker"],
     repo_url: "https://github.com/KelvinCrepaldi/hr-control-API",
     demo_url: "https://documenter.getpostman.com/view/20745940/Uz5DocEb",
-    img_print: "ApiImage",
+    img_print: "",
+    type: "back",
   },
 ];
