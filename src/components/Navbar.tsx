@@ -41,13 +41,13 @@ export default function Navbar() {
         </li>
         <li
           className={
-            router.pathname === "/blog"
+            router.pathname === "/notes"
               ? "border-b-2 border-gray-700 pb-1"
               : "border-b-2 border-transparent pb-1 hover:border-gray-700 transition"
           }
         >
-          <Link className="text-gray-700" href="/blog">
-            Blog
+          <Link className="opacity-30" href="/notes">
+            Anotações
           </Link>
         </li>
       </ul>

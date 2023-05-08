@@ -7,7 +7,7 @@ export default function Layout({ children }: any) {
     <>
       <Head>
         <link rel="shortcut icon" href="/images/favicon.ico"></link>
-        <title>PokeNext</title>
+        <title>Kelvin Crepaldi</title>
       </Head>
       <div className="flex-col p-4 m-auto md:px-10 max-w-screen-lg">
         <Navbar />

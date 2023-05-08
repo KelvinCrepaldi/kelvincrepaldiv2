@@ -22,14 +22,35 @@ export default function CardProject({ project, portfolio = false }: any) {
         ) : null}
         <div className="flex justify-between mb-3">
           <h1>{title}</h1>
-          <span>11/11/11</span>
         </div>
-        <p>{description}</p>
-        <span className="text-green-400">next.js</span>
+
+        <p className="leading-5">{description}</p>
+        <div className="flex flex-wrap leading-4 text-sm">
+          {techs.map((tech, index) => (
+            <span
+              key={index}
+              className={`${
+                index % 2 === 0 ? "text-green-500" : "text-green-300"
+              } m-0.5`}
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
       </div>
-      <div className="mt-4">
-        <Link href={repo_url}>Repositório</Link>
-        <Link href={demo_url}>Demo</Link>
+      <div className="mt-4 space-x-4">
+        <Link
+          className="bg-zinc-800 hover:bg-zinc-700 py-1 px-3 rounded-lg"
+          href={repo_url}
+        >
+          Repositório
+        </Link>
+        <Link
+          className="bg-zinc-800 hover:bg-zinc-700 py-1 px-3 rounded-lg"
+          href={demo_url}
+        >
+          Demo
+        </Link>
       </div>
     </div>
   );

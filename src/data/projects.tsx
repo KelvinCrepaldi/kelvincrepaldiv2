@@ -1,4 +1,5 @@
 import ApiImage from "../assets/server1.svg";
+import { IProject } from "@/interfaces/project.interface";
 
 /*
 export const techsData = [
@@ -37,7 +38,7 @@ export const techsData = [
 }, 
 */
 
-export const projectsData = [
+export const projectsData: IProject[] = [
   {
     title: "Kelvin Crepaldi",
     description:
@@ -66,25 +67,6 @@ export const projectsData = [
     type: "front",
   },
   {
-    title: "Ninamartinho",
-    description:
-      "Projeto de Portfólio de um artista de concepts, ilustrações e jogos.",
-    techs: [
-      "React.js",
-      "Styled Components",
-      "Vercel",
-      "Swiper",
-      "Yup",
-      "Hook Form",
-      "React-Scroll",
-      "fontawesome",
-    ],
-    repo_url: "https://github.com/KelvinCrepaldi/ninamartinho",
-    demo_url: "https://ninamartinho.vercel.app",
-    img_print: "https://imgur.com/ObGxsiM.jpg",
-    type: "front",
-  },
-  {
     title: "VMBProject",
     description:
       "App para listar negociações de moedas digitais usando a API Mercadobitcoin.",
@@ -108,6 +90,25 @@ export const projectsData = [
     repo_url: "https://github.com/KelvinCrepaldi/loginu-app",
     demo_url: "https://loginu-app.vercel.app",
     img_print: "https://imgur.com/tqDnSVY.jpg",
+    type: "front",
+  },
+  {
+    title: "Ninamartinho",
+    description:
+      "Projeto de Portfólio de um artista de concepts, ilustrações e jogos.",
+    techs: [
+      "React.js",
+      "Styled Components",
+      "Vercel",
+      "Swiper",
+      "Yup",
+      "Hook Form",
+      "React-Scroll",
+      "fontawesome",
+    ],
+    repo_url: "https://github.com/KelvinCrepaldi/ninamartinho",
+    demo_url: "https://ninamartinho.vercel.app",
+    img_print: "https://imgur.com/ObGxsiM.jpg",
     type: "front",
   },
   {

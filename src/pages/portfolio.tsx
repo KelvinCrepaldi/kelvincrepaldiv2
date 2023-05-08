@@ -32,14 +32,14 @@ export default function Home() {
         <div className="flex flex-wrap">
           {filter === "front"
             ? frontFilter.map((project, index) => (
-                <div className="flex w-full md:w-1/2 py-1 px-0.5" key={index}>
+                <div className="flex w-full md:w-1/3 py-1 px-0.5" key={index}>
                   <CardProject project={project} portfolio={true} />
                 </div>
               ))
             : null}
           {filter === "back"
             ? backFilter.map((project, index) => (
-                <div className="flex w-full md:w-1/2 py-1 px-0.5" key={index}>
+                <div className="flex w-full md:w-1/3 py-1 px-0.5" key={index}>
                   <CardProject project={project} portfolio={true} />
                 </div>
               ))

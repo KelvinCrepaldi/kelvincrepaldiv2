@@ -1,5 +1,8 @@
 import Image from "next/image";
 import kenzie from "/public/images/kenzie.jpg";
+import { techsData } from "@/data/techs";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { softwares } from "@/data/techs";
 
 export default function About() {
   return (
@@ -23,50 +26,46 @@ export default function About() {
         no mercado, como Vue3, Pinea, Next.js, AWS, Taiwinds, Web Components
         etc...
       </p>
-      <p>Algumas habilidades e tecnologias que tenho trabalhado...</p>
-      <ul>
-        <li>HTML5</li>
-        <li>HTML5</li>
-        <li>HTML5</li>
-        <li>HTML5</li>
-        <li>HTML5</li>
-        <li>HTML5</li>
-        <li>HTML5</li>
-      </ul>
+
       <p className="text-center">E a minha jornada continua . . .</p>
 
       <section>
-        <h2>hardware...</h2>
-        <ul>
-          <li>Processador: I5-9400F</li>
-          <li>memorias: 16gb(2x8) 2666mhz</li>
-          <li>Vídeo: NVIDIA RTX 2060</li>
+        <h2 className="mt-10 mb-4 text-center">
+          Algumas habilidades e tecnologias que tenho trabalhado...
+        </h2>
+        <ul className="flex justify-center flex-wrap">
+          {techsData.map((tech, index) => (
+            <li className=" flex p-1 m-1 rounded bg-green-950" key={index}>
+              <FontAwesomeIcon className="w-4" icon={tech.icon} />
+              <span className="ml-1">{tech.name}</span>
+            </li>
+          ))}
         </ul>
       </section>
+
       <section>
-        <h2>Software...</h2>
-        <ul>
-          <li>VSCode</li>
-          <li>Instant Eyedropper</li>
-          <li>Discord</li>
-          <li>Figma</li>
-          <li>Slack</li>
+        <h2 className="mb-4 text-center">Softwares...</h2>
+        <ul className="flex justify-center flex-wrap">
+          {softwares.map((software, index) => (
+            <li className="p-1 m-1 rounded bg-blue-950" key={index}>
+              <span className="ml-1">{software}</span>
+            </li>
+          ))}
         </ul>
       </section>
+
       <section>
-        <h2>VSCode extensions</h2>
-        <ul>
-          <li>Auto Close Tag</li>
-          <li>Auto Complete Tag</li>
-          <li>Auto Rename Tag</li>
-          <li>ESLint</li>
-          <li>Docker</li>
-          <li>HTML CSS Support</li>
-          <li>Material Icon Theme</li>
-          <li>Tailwind CSS IntelliSense</li>
-          <li>Thunder Client</li>
-          <li>vscode-styled-components</li>
-          <li>Vue language Features(Volar)</li>
+        <h2 className="mb-4 text-center">hardware...</h2>
+        <ul className="flex justify-center flex-wrap">
+          <li className="p-1 m-1 rounded bg-yellow-800">
+            Processador: I5-9400F
+          </li>
+          <li className="p-1 m-1 rounded bg-yellow-800">
+            memórias: 16gb(2x8) 2666mhz
+          </li>
+          <li className="p-1 m-1 rounded bg-yellow-800">
+            Vídeo: NVIDIA RTX 2060
+          </li>
         </ul>
       </section>
     </section>
