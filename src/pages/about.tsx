@@ -23,8 +23,8 @@ export default function About() {
       ></Image>
       <p>
         A partir disso estou buscando aprender novas tecnologias que se destacam
-        no mercado, como Vue3, Pinea, Next.js, AWS, Taiwinds, Web Components
-        etc...
+        no mercado, como Next.js, Tailwinds, e focado em criar projetos pessoais
+        fullstack com Next.js + express.js/typeORM e postgreSQL.
       </p>
 
       <p className="text-center">E a minha jornada continua . . .</p>

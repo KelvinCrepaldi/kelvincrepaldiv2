@@ -4,7 +4,7 @@ import { projectsData } from "@/data/projects";
 export default function Home() {
   const projectList = projectsData.slice(0, 6);
   return (
-    <main className="">
+    <main className="space-y-10">
       <section className="h-60 md:h-80 w-80 md:w-96 mt-5">
         <h1>Olá, eu sou Kelvin Crepaldi</h1>
         <span className="text-lg">Desenvolvedor Full-Stack</span>
@@ -26,6 +26,48 @@ export default function Home() {
               <CardProject project={project} />
             </div>
           ))}
+        </div>
+      </section>
+      <section>
+        <div className="flex justify-between font-bold my-6 mx-1">
+          <h2>Ultimas anotações...</h2>
+          <Link href="/notes">Ver completo</Link>
+        </div>
+        <div>
+          <ul className="space-y-1">
+            <li>
+              <Link
+                className="px-1 text-green-400 text-left border-b border-zinc-700 flex justify-between"
+                href="/notes/postgresql"
+              >
+                <strong>Postgresql</strong> <span>08/05/2023</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="px-1 text-green-400 text-left border-b border-zinc-700 flex justify-between"
+                href="/notes/postgresql"
+              >
+                <strong>Postgresql</strong> <span>08/05/2023</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="px-1 text-green-400 text-left border-b border-zinc-700 flex justify-between"
+                href="/notes/postgresql"
+              >
+                <strong>Postgresql</strong> <span>08/05/2023</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="px-1 text-green-400 text-left border-b border-zinc-700 flex justify-between"
+                href="/notes/postgresql"
+              >
+                <strong>Postgresql</strong> <span>08/05/2023</span>
+              </Link>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

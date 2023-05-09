@@ -8,7 +8,7 @@ export default function Notes() {
         fácil que eu possa encontrar, são apenas “notas” sobre meus estudos, não
         tem objetivo de ensinar, mas você pode dar uma olhada se quiser. 😉
       </p>
-      <ul>
+      <ul className="space-y-1">
         <li>
           <Link
             className="px-1 text-green-400 text-left border-b border-zinc-700 flex justify-between"

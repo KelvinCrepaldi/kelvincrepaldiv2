@@ -15,15 +15,15 @@ export default function Home() {
   return (
     <main className="">
       <section>
-        <ul className="flex space-x-2 justify-end">
+        <ul className="flex space-x-2 mb-1">
           <li
-            className="ml-2 cursor-pointer"
+            className="ml-2 cursor-pointer bg-zinc-800 px-3 py-1 rounded-xl hover:bg-zinc-700"
             onClick={() => handleSelectFilter("front")}
           >
             Front-end
           </li>
           <li
-            className="ml-2 cursor-pointer"
+            className="ml-2 cursor-pointer bg-zinc-800 px-3 py-1 rounded-xl hover:bg-zinc-700"
             onClick={() => handleSelectFilter("back")}
           >
             Back-end

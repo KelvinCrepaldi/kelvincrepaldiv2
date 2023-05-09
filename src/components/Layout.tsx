@@ -9,9 +9,9 @@ export default function Layout({ children }: any) {
         <link rel="shortcut icon" href="/images/favicon.ico"></link>
         <title>Kelvin Crepaldi</title>
       </Head>
-      <div className="flex-col p-4 m-auto md:px-10 max-w-screen-lg">
+      <div>
         <Navbar />
-        <main className="">{children}</main>
+        <main className="p-4 m-auto md:px-10 max-w-screen-lg">{children}</main>
         <Footer />
       </div>
     </>

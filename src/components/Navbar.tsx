@@ -5,7 +5,7 @@ export default function Navbar() {
   const router = useRouter();
 
   return (
-    <nav className="flex-col sticky top-0 sm:relative bg-background-gray-color ">
+    <nav className="p-4 m-auto md:px-10 max-w-screen-lg flex-col sticky top-0 sm:relative bg-background-gray-color w-full">
       <h1 className="hidden sm:flex mt-10 mb-4 text-2xl font-bold">
         Kelvin Crepaldi ヾ(•ω•`)o
       </h1>
@@ -37,7 +37,7 @@ export default function Navbar() {
               : "border-b-2 border-transparent pb-1 hover:border-red-500 transition"
           }
         >
-          <Link href="/portfolio">Portfolio</Link>
+          <Link href="/portfolio">Portfólio</Link>
         </li>
         <li
           className={
