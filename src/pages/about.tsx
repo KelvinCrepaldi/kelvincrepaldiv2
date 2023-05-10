@@ -7,7 +7,7 @@ import { softwares } from "@/data/techs";
 export default function About() {
   return (
     <section className="space-y-6">
-      <h1 className="mt-10 mb-5 ">Sobre mim...</h1>
+      <h1 className="mb-5 ">Sobre mim...</h1>
       <p className="mb-5">
         Formado pela Kenzie Academy como Full Stack, aprendi principais
         tecnologias de Front End e Back End. Entre as linguagens e tecnologias

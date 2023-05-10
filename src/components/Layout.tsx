@@ -9,9 +9,9 @@ export default function Layout({ children }: any) {
         <link rel="shortcut icon" href="/images/favicon.ico"></link>
         <title>Kelvin Crepaldi</title>
       </Head>
-      <div>
+      <div className="bg-backgroundcolor">
         <Navbar />
-        <main className="p-4 m-auto md:px-10 max-w-screen-lg">{children}</main>
+        <main className="max-w-5xl p-4 m-auto md:px-10 ">{children}</main>
         <Footer />
       </div>
     </>

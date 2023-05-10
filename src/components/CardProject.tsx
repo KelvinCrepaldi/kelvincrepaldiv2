@@ -5,7 +5,7 @@ export default function CardProject({ project, portfolio = false }: any) {
   const { title, demo_url, description, img_print, repo_url, techs }: IProject =
     project;
   return (
-    <div className=" w-full p-4 border rounded-xl border-stone-700 flex flex-col justify-between ">
+    <div className=" w-full p-4 border rounded-xl border-zinc-700 flex flex-col justify-between ">
       <div>
         {portfolio === true && img_print ? (
           <Image
