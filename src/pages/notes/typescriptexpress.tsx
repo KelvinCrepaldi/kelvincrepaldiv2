@@ -4,7 +4,7 @@ export default function TypescriptExpress() {
 
   iniciar um projeto express+typescript com o basico do basico:
     
-  
+ 
     > npm init -y
     > npm install typescript @types/node -D
     > npm install express uuid

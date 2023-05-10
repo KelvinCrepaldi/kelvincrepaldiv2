@@ -40,21 +40,12 @@ export const techsData = [
 
 export const projectsData: IProject[] = [
   {
-    title: "Kelvin Crepaldi",
-    description:
-      "Projeto de Portfólio, onde eu guardo informações e projetos pessoais.",
-    techs: [
-      "React.js",
-      "Styled Components",
-      "Vercel",
-      "EmailJS",
-      "Yup",
-      "Hook Form",
-      "fontawesome",
-    ],
-    repo_url: "https://github.com/KelvinCrepaldi/portfolio",
-    demo_url: "https://kelvincrepaldi.vercel.app/",
-    img_print: "https://imgur.com/7M5uhYT.jpg",
+    title: "kelvin Crepaldi v2",
+    description: "Código fonte deste website.",
+    techs: ["Next.js", "tailwinds", "Vercel", "fontawesome"],
+    repo_url: "https://github.com/KelvinCrepaldi/kelvincrepaldiv2",
+    demo_url: "https://kelvincrepaldi.vercel.app",
+    img_print: "https://i.imgur.com/8oYfQvZ.png",
     type: "front",
   },
   {
@@ -109,6 +100,24 @@ export const projectsData: IProject[] = [
     repo_url: "https://github.com/KelvinCrepaldi/ninamartinho",
     demo_url: "https://ninamartinho.vercel.app",
     img_print: "https://imgur.com/ObGxsiM.jpg",
+    type: "front",
+  },
+  {
+    title: "Kelvin Crepaldi v1",
+    description:
+      "Projeto de Portfólio, onde eu guardo informações e projetos pessoais.",
+    techs: [
+      "React.js",
+      "Styled Components",
+      "Vercel",
+      "EmailJS",
+      "Yup",
+      "Hook Form",
+      "fontawesome",
+    ],
+    repo_url: "https://github.com/KelvinCrepaldi/portfolio",
+    demo_url: "https://kelvincrepaldiold.vercel.app/",
+    img_print: "https://imgur.com/7M5uhYT.jpg",
     type: "front",
   },
   {

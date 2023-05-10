@@ -17,7 +17,7 @@ export default function CardProject({ project, portfolio = false }: any) {
               objectFit: "cover",
               maxHeight: "200px",
             }}
-            className="m-auto rounded-lg"
+            className="m-auto rounded-lg shadow shadow-black mb-3"
           />
         ) : null}
         <div className="flex justify-between mb-3">
@@ -42,12 +42,14 @@ export default function CardProject({ project, portfolio = false }: any) {
         <Link
           className="bg-zinc-800 hover:bg-zinc-700 py-1 px-3 rounded-lg"
           href={repo_url}
+          target="_blank"
         >
           Repositório
         </Link>
         <Link
           className="bg-zinc-800 hover:bg-zinc-700 py-1 px-3 rounded-lg"
           href={demo_url}
+          target="_blank"
         >
           Demo
         </Link>

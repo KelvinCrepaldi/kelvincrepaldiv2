@@ -5,7 +5,7 @@ export default function Navbar() {
   const router = useRouter();
 
   return (
-    <nav className="p-3 m-auto w-full flex-col sticky top-0 sm:relative bg-backgroundcolor">
+    <nav className="p-3 m-auto w-full flex-col sticky top-0 sm:relative bg-eerie-black">
       <div className="max-w-5xl m-auto md:px-10">
         <h1 className="hidden sm:flex mt-10 mb-4 text-2xl font-bold">
           📃 Kelvin Crepaldi

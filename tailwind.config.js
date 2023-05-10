@@ -7,9 +7,9 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extends: {
+    extend: {
       colors: {
-        backgroundcolor: "181818",
+        "eerie-black": "#181818",
       },
     },
   },
