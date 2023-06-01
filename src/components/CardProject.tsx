@@ -5,7 +5,12 @@ export default function CardProject({ project, portfolio = false }: any) {
   const { title, demo_url, description, img_print, repo_url, techs }: IProject =
     project;
   return (
-    <div className=" w-full p-4 border rounded-xl border-zinc-700 flex flex-col justify-between ">
+    <div
+      className=" w-full relative p-4 border rounded-xl border-zinc-700 flex flex-col 
+       justify-between after:w-px after:h-full after:absolute after:left-0 after:-bottom-full 
+       hover:after:bottom-0  after:opacity-0 hover:after:opacity-100 after:transition-all 
+       after:bg-gradient-to-b from-transparent from-10% via-green-400 via-50% to-transparent to-90% overflow-hidden"
+    >
       <div>
         {portfolio === true && img_print ? (
           <Image

@@ -1,9 +1,9 @@
 import { INotes } from "@/interfaces/notes.interface";
 export const notesPaths: INotes[] = [
   {
-    title: "CSS não tão básico",
+    title: "Algumas coisas de CSS...",
     href_link: "notes/cssadvanced",
-    date: "10/05/2023",
+    date: "01/06/2023",
     pinned: true,
   },
   {
