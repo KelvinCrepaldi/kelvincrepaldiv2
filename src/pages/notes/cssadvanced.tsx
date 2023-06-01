@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 export default function TypescriptExpress() {
   const scrollbarText = `
   ::-webkit-scrollbar {
@@ -23,33 +26,39 @@ export default function TypescriptExpress() {
 
   const fontsizeText = `
   @media(max-width: 1080px){
-    html{ // :root
+    html{ 
         font-size: 93.75%;
     }
   }
 
   @media(max-width: 720px){
-    html{ // :root
+    html{ 
         font-size: 87.5%;
     }
+  }
+  `;
+
+  const code = `
+  body{
+    width: 100vw;
   }
   `;
 
   return (
     <div className=" leading-5 ">
       <div className="flex justify-start ">
-        <Link className="p-2 bg-zinc-600" href="/notes">
+        <Link className="p-2 bg-zinc-600 my-4" href="/notes">
           Voltar
         </Link>
       </div>
-      <div className="border-l border-stone-700 pl-2 m-5 space-y-3">
+      <div className="pl-2 m-5 space-y-3">
         <h1 className="text-green-500">text-overflow: ellipsis</h1>
         <p>
           Adiciona (...) na frente do texto se o tamanho do texto passar do
           tamanho máximo do elemento pai.
         </p>
       </div>
-      <div className="border-l border-stone-700 pl-2 m-5 space-y-3">
+      <div className="pl-2 m-5 space-y-3">
         <h1 className="text-green-500">overflow</h1>
         <p>
           Propriedade que especifica o comportamento de elementos que saem do
@@ -72,13 +81,15 @@ export default function TypescriptExpress() {
           no carrinho.
         </p>
       </div>
-      <div className="border-l border-stone-700 pl-2 m-5 space-y-3">
+      <div className="pl-2 m-5 space-y-3">
         <h1 className="text-green-500">Tamanho de fonte</h1>
         <p>
           Caso você decida mudar o tamanho da fonte de acordo com o tamanho da
           tela, use esse método:
         </p>
-        <pre>{fontsizeText}</pre>
+        <SyntaxHighlighter style={dracula} language="css">
+          {fontsizeText}
+        </SyntaxHighlighter>
         <p>
           Sempre use {`"`}rem{`"`} para definir tamanho de fontes, e assim o
           tamanho vai se ajustar de forma automática de acordo com o font-size
@@ -86,12 +97,14 @@ export default function TypescriptExpress() {
         </p>
       </div>
 
-      <div className="border-l border-stone-700 pl-2 m-5 space-y-3">
+      <div className="pl-2 m-5 space-y-3">
         <h1 className="text-green-500">Estilização de scrollBar</h1>
         <p>Código css para estilizar as barras de rolagem: </p>
-        <pre>{scrollbarText}</pre>
+        <SyntaxHighlighter style={dracula} language="css">
+          {scrollbarText}
+        </SyntaxHighlighter>
       </div>
-      <div className="border-l border-stone-700 pl-2 m-5 space-y-3">
+      <div className="pl-2 m-5 space-y-3">
         <h1 className="text-green-500">
           O problema em usar as unidades viewport
         </h1>
@@ -115,10 +128,9 @@ export default function TypescriptExpress() {
           fazendo com que a barra de rolagem horizontal apareça e cortando um
           pedacinho da tela. Algo parecido com isso:
         </p>
-        <pre>
-          body{"{"} width: 100vw;
-          {"}"}
-        </pre>
+        <SyntaxHighlighter style={dracula} language="css">
+          {code}
+        </SyntaxHighlighter>
         <div className="w-60 h-20  bg-slate-800 overflow-auto">
           <div className="w-64 h-5 "></div>
         </div>

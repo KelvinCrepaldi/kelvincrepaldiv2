@@ -1,14 +1,18 @@
 import Link from "next/link";
 export default function Typeorm() {
-  const anotação = `TypeORM + Express + PostgreSQL (basico)
+  const anotação = `
+  Essa página deve ser reescrita em breve...
+  TypeORM + Express + PostgreSQL (basico)
   Como o passo a passo é muito longo esse arquivo é apenas um apoio para iniciar projetos com typeORM.
-  Não é um "tutorial/aula" então é necessario o conhecimento do assunto para entender melhor, e tenha em mente que as informações podem estar ultrapassadas com o tempo o que pode ocasionar alguns bugs.
+  Não é um "tutorial/aula" então é necessario o conhecimento do assunto para entender melhor, e tenha em mente que as informações 
+  podem estar ultrapassadas com o tempo o que pode ocasionar alguns bugs.
   Então caso ocorra algum bug, entenda que pode ser esse o motivo e será necessario uma pesquisa aprofundada sobre o problema.
   Tudo aqui está sendo adicionado em um projeto exemplo basico já criado em typescript. > inserir link para levar ao apoio de ts
   
   O uso é em cima do typescript, e algumas configurações são necessarias no arquivo tsconfig.json 
   
-      "outDir": "./dist"  < especifica diretorio no qual a compilação do ts sera criada, convertendo para js, não é do typeorm mas eu decidi apontar novamente essa importancia.
+      "outDir": "./dist"  < especifica diretorio no qual a compilação do ts sera criada, convertendo para js, não é do typeorm mas
+      eu decidi apontar novamente essa importancia.
   
       "experimentalDecorators": true /* Enable experimental support for TC39 stage 2 draft decorators. */,
           "emitDecoratorMetadata": true /* Emit design-type metadata for decorated declarations in source files. */,
@@ -34,12 +38,14 @@ export default function Typeorm() {
       DB=
   
   criar o arquivo data-source.ts (o nome pode mudar em cada projeto) que sera usado pelo typeORM para conectar ao banco de dados.
-  Nesse caso você deve entrar na documentação oficial do typeORM e ver como é feito esse arquivo, a forma que ele é escrito e usado pode mudar:
+  Nesse caso você deve entrar na documentação oficial do typeORM e ver como é feito esse arquivo, a forma que ele é escrito e usado 
+  pode mudar:
   
       https://typeorm.io/#:~:text=%23%20Creating%20a%20new%20DataSource
       https://typeorm.io
   
-  Um aviso muito importante nesse arquivo é que a configurações de entities pode mudar, em windows eu tive que importar cada entidade e inserir numa lista, por exemplo:
+  Um aviso muito importante nesse arquivo é que a configurações de entities pode mudar, em windows eu tive que importar cada entidade 
+  e inserir numa lista, por exemplo:
       import { Photo } from "./entity/Photo"
   
       const AppDataSource = new DataSource({
@@ -61,7 +67,8 @@ export default function Typeorm() {
   pois escrever projetos em windows e subir em deploys com linux podem quebrar o app, eu tive alguns problemas com isso
   e foi super dificil encontrar respostas.
   
-  importe o dotenv dentro do arquivo de DataSource para adicionar as informações de conexão do banco, usando o process.env para adicionar as informações:
+  importe o dotenv dentro do arquivo de DataSource para adicionar as informações de conexão do banco, usando o process.env para 
+  adicionar as informações:
       import "dotenv/config"
   
       const AppDataSource = new DataSource({

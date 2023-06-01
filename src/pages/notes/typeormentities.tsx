@@ -1,6 +1,7 @@
 import Link from "next/link";
 export default function Typeorm() {
-  const anotação = `------------------------ Estrutura basica de exemplo:--------------------------
+  const anotação = `
+  ------------------------ Estrutura basica de exemplo:--------------------------
 
   import {
     Entity,
@@ -37,9 +38,10 @@ export default function Typeorm() {
     updateAt: Date;
   }
   
-  --------------------------------Relacionamentos -------------------------------------------
+  --------------------------------Relacionamentos -------------------------------
   
-  Lembrar que ao criar novos relacionamentos é necessario definir como {nullable: true} para não conflitar com dados que já existiam.
+  Lembrar que ao criar novos relacionamentos é necessario definir como 
+  {nullable: true} para não conflitar com dados que já existiam.
   
   ========== 1:1
   É necessario relacionar apenas em um lado!
@@ -63,7 +65,9 @@ export default function Typeorm() {
        properties: Property[];
   
   ========== N:N
-  É necessario criar uma tabela pivo onde será armazenado a junção das duas tabelas:
+  É necessario criar uma tabela pivo onde será armazenado a junção das 
+  duas tabelas:
+  
   "Property" N:1  "Schedule" 1:N "User"
   
   src/entities/schedule.entity.ts
