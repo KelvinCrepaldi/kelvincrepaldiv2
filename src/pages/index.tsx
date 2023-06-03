@@ -27,7 +27,7 @@ export default function Home() {
               className="m-2 hover:text-green-500 transition w-10"
             />
           </Link>
-          <Link href={""}>
+          <Link href={"https://www.linkedin.com/in/kelvincrepaldi/"}>
             <FontAwesomeIcon
               icon={faLinkedin}
               className="m-2 hover:text-green-500 transition  w-9"
