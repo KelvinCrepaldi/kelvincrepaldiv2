@@ -44,12 +44,35 @@ export default function TypescriptExpress() {
   }
   `;
 
+  const codeIntl = `
+  function formatNumber(number: number) {
+    return Intl.NumberFormat("en", {
+      notation: "compact",
+      minimumFractionDigits: 0,
+    }).format(number);
+  }
+
+  formatNumber(10000); //10k
+  formatNumber(1000000); //1M
+  `;
+
   return (
     <div className=" leading-5 ">
       <div className="flex justify-start ">
         <Link className="p-2 bg-zinc-600 my-4" href="/notes">
           Voltar
         </Link>
+      </div>
+      <div className="pl-2 m-5 space-y-3">
+        <h1 className="text-green-500">API Intl do javascript</h1>
+        <p>Não é css mas quebra um galho! 🤔</p>
+        <p>
+          É possivel formatar numeros para mostrar a quantidade de forma
+          resumida, assim como é feito em redes sociais.{" "}
+        </p>
+        <SyntaxHighlighter style={dracula} language="css">
+          {codeIntl}
+        </SyntaxHighlighter>
       </div>
       <div className="pl-2 m-5 space-y-3">
         <h1 className="text-green-500">text-overflow: ellipsis</h1>
